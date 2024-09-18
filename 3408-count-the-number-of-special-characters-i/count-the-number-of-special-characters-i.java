@@ -8,9 +8,9 @@ class Solution {
         }
         for(char x:set)
         {
-            if (Character.isLetter(x) && set.contains(Character.toLowerCase(x)) && set.contains(Character.toUpperCase(x)))
+            if (Character.isLowerCase(x) &&  set.contains(Character.toUpperCase(x)))
             count++;
         }
-        return count/2;
+        return count;
     }
 }
